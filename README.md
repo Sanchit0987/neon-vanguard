@@ -2,9 +2,27 @@
 
 **One ship. Infinite odds.** A complete browser-based 2D space shooter built with React, TypeScript, HTML5 Canvas, Tailwind CSS 4, and Vite. All ship artwork, stars, effects, and sound are procedural; there are no remote fonts, image downloads, audio files, accounts, or backend services.
 
+## Published game
+
+- **Play:** [neon-vanguard-tawny.vercel.app](https://neon-vanguard-tawny.vercel.app)
+- **Source:** [Sanchit0987/neon-vanguard](https://github.com/Sanchit0987/neon-vanguard) (private repository)
+- **Hosting:** [Vercel project](https://vercel.com/llm-cc8e/neon-vanguard)
+
+Only this game is in the repository; the surrounding Designer workspace is not published. The production site was deployed from this project's source using the Vercel CLI. Its build uses Node.js 24, `npm ci`, `npm run build`, and the `dist` output directory, as specified in [vercel.json](vercel.json). Local environment files and Vercel credentials are excluded from Git. Test sources and QA captures are excluded from the CLI deployment upload.
+
+**Automatic Git deployments are not connected yet.** Vercel's GitHub integration needs access to this new private repository. Grant it access to `Sanchit0987/neon-vanguard` and connect that repository in this Vercel project's Git settings to enable production deployments from `main`. No repository visibility change is necessary.
+
+Until Git integration is connected, publish updates from the game directory using an authenticated Vercel account:
+
+```sh
+npx vercel@65.0.0 --prod --scope llm-cc8e
+```
+
+The public HTTPS deployment was verified in fresh desktop and mobile Chrome contexts: menu, gameplay timer, firing, boost, cooldown feedback, and pause/resume work; no login is required to play and the development test hook is absent. Existing local scores remain on their original browser origin; scores on the hosted domain are stored separately.
+
 ## Play locally
 
-Use **Node.js 24 LTS** (Node 22.12+ on the 22.x line also works):
+Use **Node.js 24 LTS**, matching the pinned package engine and production environment:
 
 ```sh
 npm ci
