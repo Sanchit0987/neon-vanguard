@@ -1,0 +1,13 @@
+# Publish only the game build inputs, not QA captures, tests, or local credentials.
+.git
+.vercel
+node_modules
+dist
+artifacts
+tests
+src/**/*.test.ts
+*.tsbuildinfo
+README.md
+.env
+.env.*
+*.log
