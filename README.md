@@ -5,12 +5,12 @@
 ## Published game
 
 - **Play:** [neon-vanguard-tawny.vercel.app](https://neon-vanguard-tawny.vercel.app)
-- **Source:** [Sanchit0987/neon-vanguard](https://github.com/Sanchit0987/neon-vanguard) (private repository)
+- **Source:** [Sanchit0987/neon-vanguard](https://github.com/Sanchit0987/neon-vanguard) (public repository)
 - **Hosting:** [Vercel project](https://vercel.com/llm-cc8e/neon-vanguard)
 
 Only this game is in the repository; the surrounding Designer workspace is not published. The production site was deployed from this project's source using the Vercel CLI. Its build uses Node.js 24, `npm ci`, `npm run build`, and the `dist` output directory, as specified in [vercel.json](vercel.json). Local environment files and Vercel credentials are excluded from Git. Test sources and QA captures are excluded from the CLI deployment upload.
 
-**Automatic Git deployments are not connected yet.** Vercel's GitHub integration needs access to this new private repository. Grant it access to `Sanchit0987/neon-vanguard` and connect that repository in this Vercel project's Git settings to enable production deployments from `main`. No repository visibility change is necessary.
+**Automatic Git deployments are not connected yet.** Connect `Sanchit0987/neon-vanguard` in this Vercel project's Git settings, granting the Vercel GitHub integration repository access if prompted, to enable production deployments from `main`. The repository is now public; changing visibility alone does not establish the deployment connection.
 
 Until Git integration is connected, publish updates from the game directory using an authenticated Vercel account:
 
